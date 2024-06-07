@@ -1,7 +1,16 @@
-describe('isFromBellville function' , function(){
-    it("it should return true is the vehicle registration is from Bellville (CY) and false if it is not" , function(){
+describe('isFromBellville function', function() {
+    it("it should return true if the vehicle registration is from Bellville (CY) and false if it is not", function() {
         assert.equal(isFromBellville('CY 123'), true);
         assert.equal(isFromBellville('CJ 123'), false);
+    });
+
+    it("it should return true if the vehicle registration is from Bellville (cy) in different case", function() {
+        assert.equal(isFromBellville('cy 123'), true);
+        assert.equal(isFromBellville('Cy 123'), true);
+    });
+
+    it("it should return true if the vehicle registration is from Bellville (CY) with leading/trailing spaces", function() {
+        assert.equal(isFromBellville(' CY 123 '), true);
     });
 
 });
