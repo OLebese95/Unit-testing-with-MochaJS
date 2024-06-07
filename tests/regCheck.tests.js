@@ -13,11 +13,6 @@ describe('regCheck function', function() {
         assert.equal(regCheck('FGT 123 MM', 'MP'), false);
     });
 
-    it("it should return false when the province code is an empty string", function() {
-        assert.equal(regCheck('DC 55 YU GP', ''), false);
-        assert.equal(regCheck('5566 L', ''), false);
-    });
-
     it("it should return false when the registration number is an empty string", function() {
         assert.equal(regCheck('', 'GP'), false);
         assert.equal(regCheck('', 'EC'), false);

@@ -9,7 +9,7 @@ describe('Greet function' , function(){
     });
 
     it("should handle names with spaces" , function(){
-        assert.equal(greet("John Doe"), "Hello, John Wick");
+        assert.equal(greet("John Wick"), "Hello, John Wick");
     });
 
 });
