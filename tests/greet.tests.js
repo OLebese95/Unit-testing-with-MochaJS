@@ -4,10 +4,10 @@ describe('Greet function' , function(){
         assert.equal(greet("Thato"), "Hello, Thato");
     });
 
-    it("should handle an empty string" , function(){
-        assert.equal(greet(""), "Hello, ");
+    it("should handle an empty string", function() {
+        assert.equal(greet(""), "Please enter a name");
     });
-
+    
     it("should handle names with spaces" , function(){
         assert.equal(greet("John Wick"), "Hello, John Wick");
     });
